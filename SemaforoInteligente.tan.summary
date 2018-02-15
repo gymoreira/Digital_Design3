@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 119.000 ns
+From           : Control:inst3|74161:inst116|f74161:sub|99
+To             : Red2
+From Clock     : clock_32
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock_32'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 34.36 MHz ( period = 29.100 ns )
+From           : MaquinadeStateMain:inst8|inst
+To             : MaquinadeStateMain:inst8|74161:inst115|f74161:sub|9
+From Clock     : clock_32
+To Clock       : clock_32
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clock_32'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : MaquinadeStateMain:inst8|inst
+To             : MaquinadeStateMain:inst8|inst3
+From Clock     : clock_32
+To Clock       : clock_32
+Failed Paths   : 38
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 38
+
+--------------------------------------------------------------------------------------
+

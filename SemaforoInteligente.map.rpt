@@ -1,0 +1,474 @@
+Analysis & Synthesis report for SemaforoInteligente
+Thu Feb 15 16:45:13 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: MaquinadeStateSecondary:inst9|74161:inst115
+ 10. Parameter Settings for User Entity Instance: MaquinadeStateSecondary:inst9|74161:inst114
+ 11. Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst113
+ 12. Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst112
+ 13. Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst114
+ 14. Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst116
+ 15. Parameter Settings for User Entity Instance: Control:inst3|74161:inst116
+ 16. Parameter Settings for User Entity Instance: MaquinadeStateMain:inst8|74161:inst115
+ 17. Parameter Settings for User Entity Instance: MaquinadeStateMain:inst8|74161:inst114
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Feb 15 16:45:13 2018        ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name               ; SemaforoInteligente                          ;
+; Top-level Entity Name       ; SemaforoInteligente                          ;
+; Family                      ; ACEX1K                                       ;
+; Total logic elements        ; 96                                           ;
+; Total pins                  ; 12                                           ;
+; Total memory bits           ; 0                                            ;
+; Total PLLs                  ; 0                                            ;
++-----------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++--------------------------------------------------------------+---------------------+---------------------+
+; Option                                                       ; Setting             ; Default Value       ;
++--------------------------------------------------------------+---------------------+---------------------+
+; Device                                                       ; EP1K100QC208-3      ;                     ;
+; Top-level entity name                                        ; SemaforoInteligente ; SemaforoInteligente ;
+; Family name                                                  ; ACEX1K              ; Stratix II          ;
+; Use Generated Physical Constraints File                      ; Off                 ;                     ;
+; Use smart compilation                                        ; Off                 ; Off                 ;
+; Create Debugging Nodes for IP Cores                          ; Off                 ; Off                 ;
+; Preserve fewer node names                                    ; On                  ; On                  ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                 ; Off                 ;
+; Verilog Version                                              ; Verilog_2001        ; Verilog_2001        ;
+; VHDL Version                                                 ; VHDL93              ; VHDL93              ;
+; State Machine Processing                                     ; Auto                ; Auto                ;
+; Safe State Machine                                           ; Off                 ; Off                 ;
+; Extract Verilog State Machines                               ; On                  ; On                  ;
+; Extract VHDL State Machines                                  ; On                  ; On                  ;
+; Ignore Verilog initial constructs                            ; Off                 ; Off                 ;
+; Iteration limit for constant Verilog loops                   ; 5000                ; 5000                ;
+; Iteration limit for non-constant Verilog loops               ; 250                 ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                  ; On                  ;
+; Parallel Synthesis                                           ; Off                 ; Off                 ;
+; NOT Gate Push-Back                                           ; On                  ; On                  ;
+; Power-Up Don't Care                                          ; On                  ; On                  ;
+; Remove Redundant Logic Cells                                 ; Off                 ; Off                 ;
+; Remove Duplicate Registers                                   ; On                  ; On                  ;
+; Ignore CARRY Buffers                                         ; Off                 ; Off                 ;
+; Ignore CASCADE Buffers                                       ; Off                 ; Off                 ;
+; Ignore GLOBAL Buffers                                        ; Off                 ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                 ; Off                 ;
+; Ignore LCELL Buffers                                         ; Off                 ; Off                 ;
+; Ignore SOFT Buffers                                          ; On                  ; On                  ;
+; Limit AHDL Integers to 32 Bits                               ; Off                 ; Off                 ;
+; Auto Implement in ROM                                        ; Off                 ; Off                 ;
+; Optimization Technique                                       ; Area                ; Area                ;
+; Carry Chain Length                                           ; 32                  ; 32                  ;
+; Cascade Chain Length                                         ; 2                   ; 2                   ;
+; Auto Carry Chains                                            ; On                  ; On                  ;
+; Auto Open-Drain Pins                                         ; On                  ; On                  ;
+; Auto ROM Replacement                                         ; On                  ; On                  ;
+; Auto RAM Replacement                                         ; On                  ; On                  ;
+; Auto Clock Enable Replacement                                ; On                  ; On                  ;
+; Strict RAM Replacement                                       ; Off                 ; Off                 ;
+; Auto Resource Sharing                                        ; Off                 ; Off                 ;
+; Allow Any RAM Size For Recognition                           ; Off                 ; Off                 ;
+; Allow Any ROM Size For Recognition                           ; Off                 ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing          ; On                  ; On                  ;
+; Ignore translate_off and synthesis_off directives            ; Off                 ; Off                 ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                  ; On                  ;
+; HDL message level                                            ; Level2              ; Level2              ;
+; Suppress Register Optimization Related Messages              ; Off                 ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                 ; 100                 ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                 ; 100                 ;
+; Block Design Naming                                          ; Auto                ; Auto                ;
+; Synthesis Effort                                             ; Auto                ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                  ; On                  ;
+; Analysis & Synthesis Message Level                           ; Medium              ; Medium              ;
++--------------------------------------------------------------+---------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                             ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+
+; Control.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/Control.bdf                 ;
+; SemaforoInteligente.bdf          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/SemaforoInteligente.bdf     ;
+; MaquinadeStateMain.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/MaquinadeStateMain.bdf      ;
+; DECFarolMain.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/DECFarolMain.bdf            ;
+; DECFarolSecondary.bdf            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/DECFarolSecondary.bdf       ;
+; MaquinadeStateSecondary.bdf      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/MaquinadeStateSecondary.bdf ;
+; MaquinadeStateNight.bdf          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/MaquinadeStateNight.bdf     ;
+; DECFarolNight.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/DECFarolNight.bdf           ;
+; 74173.bdf                        ; yes             ; Megafunction                             ; c:/altera/90sp2/quartus/libraries/others/maxplus2/74173.bdf                              ;
+; 74161.tdf                        ; yes             ; Megafunction                             ; c:/altera/90sp2/quartus/libraries/others/maxplus2/74161.tdf                              ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; c:/altera/90sp2/quartus/libraries/megafunctions/aglobal.inc                              ;
+; f74161.bdf                       ; yes             ; Megafunction                             ; c:/altera/90sp2/quartus/libraries/others/maxplus2/f74161.bdf                             ;
+; Divisor.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/Divisor.bdf                 ;
+; DECFarol.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/DECFarol.bdf                ;
+; Start.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/Start.bdf                   ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++-----------------------------------+-----------------------+
+; Resource                          ; Usage                 ;
++-----------------------------------+-----------------------+
+; Total logic elements              ; 96                    ;
+; Total combinational functions     ; 93                    ;
+;     -- Total 4-input functions    ; 15                    ;
+;     -- Total 3-input functions    ; 5                     ;
+;     -- Total 2-input functions    ; 23                    ;
+;     -- Total 1-input functions    ; 44                    ;
+;     -- Total 0-input functions    ; 6                     ;
+; Total registers                   ; 67                    ;
+; Total logic cells in carry chains ; 21                    ;
+; I/O pins                          ; 12                    ;
+; Maximum fan-out node              ; Divisor:inst12|inst44 ;
+; Maximum fan-out                   ; 29                    ;
+; Total fan-out                     ; 295                   ;
+; Average fan-out                   ; 2.73                  ;
++-----------------------------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                         ; Library Name ;
++------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------+--------------+
+; |SemaforoInteligente               ; 96 (2)      ; 67           ; 0           ; 12   ; 29 (2)       ; 3 (0)             ; 64 (0)           ; 21 (0)          ; 0 (0)      ; |SemaforoInteligente                                                        ; work         ;
+;    |74173:inst31|                  ; 4 (4)       ; 1            ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|74173:inst31                                           ; work         ;
+;    |74173:inst32|                  ; 4 (4)       ; 1            ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|74173:inst32                                           ; work         ;
+;    |74173:inst33|                  ; 5 (5)       ; 3            ; 0           ; 0    ; 2 (2)        ; 1 (1)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|74173:inst33                                           ; work         ;
+;    |74173:inst34|                  ; 7 (7)       ; 2            ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|74173:inst34                                           ; work         ;
+;    |74173:inst35|                  ; 3 (3)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|74173:inst35                                           ; work         ;
+;    |74173:inst36|                  ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|74173:inst36                                           ; work         ;
+;    |Control:inst3|                 ; 14 (6)      ; 8            ; 0           ; 0    ; 6 (4)        ; 2 (0)             ; 6 (2)            ; 3 (0)           ; 0 (0)      ; |SemaforoInteligente|Control:inst3                                          ; work         ;
+;       |74161:inst116|              ; 3 (0)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |SemaforoInteligente|Control:inst3|74161:inst116                            ; work         ;
+;          |f74161:sub|              ; 3 (3)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 3 (3)           ; 0 (0)      ; |SemaforoInteligente|Control:inst3|74161:inst116|f74161:sub                 ; work         ;
+;       |74173:inst36|               ; 4 (4)       ; 2            ; 0           ; 0    ; 2 (2)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|Control:inst3|74173:inst36                             ; work         ;
+;       |74173:inst37|               ; 1 (1)       ; 1            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|Control:inst3|74173:inst37                             ; work         ;
+;    |DECFarolMain:inst15|           ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|DECFarolMain:inst15                                    ; work         ;
+;    |DECFarolSecondary:inst16|      ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |SemaforoInteligente|DECFarolSecondary:inst16                               ; work         ;
+;    |Divisor:inst12|                ; 35 (27)     ; 33           ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 33 (25)          ; 8 (0)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12                                         ; work         ;
+;       |74161:inst112|              ; 4 (0)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12|74161:inst112                           ; work         ;
+;          |f74161:sub|              ; 4 (4)       ; 4            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12|74161:inst112|f74161:sub                ; work         ;
+;       |74161:inst113|              ; 2 (0)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12|74161:inst113                           ; work         ;
+;          |f74161:sub|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12|74161:inst113|f74161:sub                ; work         ;
+;       |74161:inst114|              ; 2 (0)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12|74161:inst114                           ; work         ;
+;          |f74161:sub|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |SemaforoInteligente|Divisor:inst12|74161:inst114|f74161:sub                ; work         ;
+;    |MaquinadeStateMain:inst8|      ; 9 (4)       ; 7            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 7 (2)            ; 5 (0)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateMain:inst8                               ; work         ;
+;       |74161:inst114|              ; 3 (0)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst114                 ; work         ;
+;          |f74161:sub|              ; 3 (3)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 3 (3)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst114|f74161:sub      ; work         ;
+;       |74161:inst115|              ; 2 (0)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst115                 ; work         ;
+;          |f74161:sub|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst115|f74161:sub      ; work         ;
+;    |MaquinadeStateSecondary:inst9| ; 9 (4)       ; 7            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 7 (2)            ; 5 (0)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateSecondary:inst9                          ; work         ;
+;       |74161:inst114|              ; 3 (0)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst114            ; work         ;
+;          |f74161:sub|              ; 3 (3)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 3 (3)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst114|f74161:sub ; work         ;
+;       |74161:inst115|              ; 2 (0)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst115            ; work         ;
+;          |f74161:sub|              ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst115|f74161:sub ; work         ;
++------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++---------------------------------------+------------------------------------------+
+; Register name                         ; Reason for Removal                       ;
++---------------------------------------+------------------------------------------+
+; 74173:inst31|8                        ; Merged with 74173:inst31|9               ;
+; 74173:inst32|8                        ; Merged with 74173:inst32|9               ;
+; 74173:inst34|7                        ; Merged with 74173:inst33|7               ;
+; 74173:inst36|7                        ; Merged with 74173:inst35|7               ;
+; Control:inst3|74173:inst37|8          ; Merged with Control:inst3|74173:inst37|9 ;
+; Total Number of Removed Registers = 5 ;                                          ;
++---------------------------------------+------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 67    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Load  ; 2     ;
+; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MaquinadeStateSecondary:inst9|74161:inst115 ;
++------------------------+--------+--------------------------------------------------------+
+; Parameter Name         ; Value  ; Type                                                   ;
++------------------------+--------+--------------------------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                                ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                                           ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                                         ;
++------------------------+--------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MaquinadeStateSecondary:inst9|74161:inst114 ;
++------------------------+--------+--------------------------------------------------------+
+; Parameter Name         ; Value  ; Type                                                   ;
++------------------------+--------+--------------------------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                                ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                                           ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                                         ;
++------------------------+--------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst113 ;
++------------------------+--------+-----------------------------------------+
+; Parameter Name         ; Value  ; Type                                    ;
++------------------------+--------+-----------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                          ;
++------------------------+--------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst112 ;
++------------------------+--------+-----------------------------------------+
+; Parameter Name         ; Value  ; Type                                    ;
++------------------------+--------+-----------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                          ;
++------------------------+--------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst114 ;
++------------------------+--------+-----------------------------------------+
+; Parameter Name         ; Value  ; Type                                    ;
++------------------------+--------+-----------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                          ;
++------------------------+--------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Divisor:inst12|74161:inst116 ;
++------------------------+--------+-----------------------------------------+
+; Parameter Name         ; Value  ; Type                                    ;
++------------------------+--------+-----------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                          ;
++------------------------+--------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Control:inst3|74161:inst116 ;
++------------------------+--------+----------------------------------------+
+; Parameter Name         ; Value  ; Type                                   ;
++------------------------+--------+----------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                         ;
++------------------------+--------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MaquinadeStateMain:inst8|74161:inst115 ;
++------------------------+--------+---------------------------------------------------+
+; Parameter Name         ; Value  ; Type                                              ;
++------------------------+--------+---------------------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                                    ;
++------------------------+--------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MaquinadeStateMain:inst8|74161:inst114 ;
++------------------------+--------+---------------------------------------------------+
+; Parameter Name         ; Value  ; Type                                              ;
++------------------------+--------+---------------------------------------------------+
+; DEVICE_FAMILY          ; ACEX1K ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE                                    ;
++------------------------+--------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Feb 15 16:45:09 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SemaforoInteligente -c SemaforoInteligente
+Info: Found 1 design units, including 1 entities, in source file Control.bdf
+    Info: Found entity 1: Control
+Info: Found 1 design units, including 1 entities, in source file SemaforoInteligente.bdf
+    Info: Found entity 1: SemaforoInteligente
+Info: Found 1 design units, including 1 entities, in source file MaquinadeStateMain.bdf
+    Info: Found entity 1: MaquinadeStateMain
+Info: Found 1 design units, including 1 entities, in source file DECFarolMain.bdf
+    Info: Found entity 1: DECFarolMain
+Info: Found 1 design units, including 1 entities, in source file DECFarolSecondary.bdf
+    Info: Found entity 1: DECFarolSecondary
+Info: Found 1 design units, including 1 entities, in source file MaquinadeStateSecondary.bdf
+    Info: Found entity 1: MaquinadeStateSecondary
+Info: Found 1 design units, including 1 entities, in source file MaquinadeStateNight.bdf
+    Info: Found entity 1: MaquinadeStateNight
+Info: Found 1 design units, including 1 entities, in source file DECFarolNight.bdf
+    Info: Found entity 1: DECFarolNight
+Info: Elaborating entity "SemaforoInteligente" for the top level hierarchy
+Info: Elaborating entity "74173" for hierarchy "74173:inst35"
+Info: Elaborated megafunction instantiation "74173:inst35"
+Info: Elaborating entity "DECFarolSecondary" for hierarchy "DECFarolSecondary:inst16"
+Info: Elaborating entity "MaquinadeStateSecondary" for hierarchy "MaquinadeStateSecondary:inst9"
+Info: Elaborating entity "74161" for hierarchy "MaquinadeStateSecondary:inst9|74161:inst115"
+Info: Elaborated megafunction instantiation "MaquinadeStateSecondary:inst9|74161:inst115"
+Info: Elaborating entity "f74161" for hierarchy "MaquinadeStateSecondary:inst9|74161:inst115|f74161:sub"
+Info: Elaborated megafunction instantiation "MaquinadeStateSecondary:inst9|74161:inst115|f74161:sub", which is child of megafunction instantiation "MaquinadeStateSecondary:inst9|74161:inst115"
+Info: Elaborating entity "74161" for hierarchy "MaquinadeStateSecondary:inst9|74161:inst114"
+Info: Elaborated megafunction instantiation "MaquinadeStateSecondary:inst9|74161:inst114"
+Warning: Using design file Divisor.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: Divisor
+Info: Elaborating entity "Divisor" for hierarchy "Divisor:inst12"
+Warning: Pin "clock_25" not connected
+Warning: Primitive "NOT" of instance "inst100" not used
+Warning: Primitive "NOT" of instance "inst101" not used
+Warning: Primitive "NOT" of instance "inst102" not used
+Warning: Primitive "DFF" of instance "inst103" not used
+Warning: Primitive "NOT" of instance "inst108" not used
+Warning: Primitive "DFF" of instance "inst45" not used
+Warning: Primitive "DFF" of instance "inst46" not used
+Warning: Primitive "DFF" of instance "inst47" not used
+Warning: Primitive "DFF" of instance "inst48" not used
+Warning: Primitive "DFF" of instance "inst49" not used
+Warning: Primitive "DFF" of instance "inst50" not used
+Warning: Primitive "DFF" of instance "inst51" not used
+Warning: Primitive "DFF" of instance "inst52" not used
+Warning: Primitive "DFF" of instance "inst53" not used
+Warning: Primitive "DFF" of instance "inst54" not used
+Warning: Primitive "DFF" of instance "inst7" not used
+Warning: Primitive "NOT" of instance "inst84" not used
+Warning: Primitive "NOT" of instance "inst85" not used
+Warning: Primitive "NOT" of instance "inst86" not used
+Warning: Primitive "NOT" of instance "inst87" not used
+Warning: Primitive "NOT" of instance "inst88" not used
+Warning: Primitive "DFF" of instance "inst89" not used
+Warning: Primitive "NOT" of instance "inst90" not used
+Warning: Primitive "NOT" of instance "inst91" not used
+Warning: Primitive "NOT" of instance "inst92" not used
+Warning: Primitive "NOT" of instance "inst93" not used
+Warning: Primitive "NOT" of instance "inst94" not used
+Warning: Primitive "DFF" of instance "inst95" not used
+Warning: Primitive "DFF" of instance "inst96" not used
+Warning: Primitive "DFF" of instance "inst97" not used
+Warning: Primitive "NOT" of instance "inst98" not used
+Warning: Primitive "NOT" of instance "inst99" not used
+Info: Elaborating entity "74161" for hierarchy "Divisor:inst12|74161:inst113"
+Info: Elaborated megafunction instantiation "Divisor:inst12|74161:inst113"
+Info: Elaborating entity "74161" for hierarchy "Divisor:inst12|74161:inst112"
+Info: Elaborated megafunction instantiation "Divisor:inst12|74161:inst112"
+Info: Elaborating entity "74161" for hierarchy "Divisor:inst12|74161:inst114"
+Info: Elaborated megafunction instantiation "Divisor:inst12|74161:inst114"
+Info: Elaborating entity "74161" for hierarchy "Divisor:inst12|74161:inst116"
+Info: Elaborated megafunction instantiation "Divisor:inst12|74161:inst116"
+Warning: Using design file DECFarol.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: DECFarol
+Info: Elaborating entity "DECFarol" for hierarchy "DECFarol:inst10"
+Info: Elaborating entity "Control" for hierarchy "Control:inst3"
+Info: Elaborating entity "74161" for hierarchy "Control:inst3|74161:inst116"
+Info: Elaborated megafunction instantiation "Control:inst3|74161:inst116"
+Info: Elaborating entity "DECFarolMain" for hierarchy "DECFarolMain:inst15"
+Info: Elaborating entity "MaquinadeStateMain" for hierarchy "MaquinadeStateMain:inst8"
+Warning: Using design file Start.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: Start
+Info: Elaborating entity "Start" for hierarchy "Start:inst7"
+Info: Elaborating entity "DECFarolNight" for hierarchy "DECFarolNight:inst20"
+Info: Elaborating entity "MaquinadeStateNight" for hierarchy "MaquinadeStateNight:inst19"
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+    Warning: Converted the fan-out from the tri-state buffer "Control:inst3|74173:inst36|42" to the node "DECFarol:inst10|inst8" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "Control:inst3|74173:inst36|43" to the node "DECFarol:inst10|inst8" into an OR gate
+Info: Converted 8 single input CARRY primitives to CARRY_SUM primitives
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock_25"
+Info: Implemented 108 device resources after synthesis - the final resource count might be different
+    Info: Implemented 5 input pins
+    Info: Implemented 7 output pins
+    Info: Implemented 96 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 284 megabytes
+    Info: Processing ended: Thu Feb 15 16:45:13 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

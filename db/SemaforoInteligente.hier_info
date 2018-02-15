@@ -1,0 +1,725 @@
+|SemaforoInteligente
+Green1 <= Green1~0.DB_MAX_OUTPUT_PORT_TYPE
+clock_32 => Divisor:inst12.clock_32
+clock_25 => Divisor:inst12.clock_25
+0A => inst2.IN0
+Enable => inst6.IN0
+Enable => inst5.IN1
+0B => inst1.IN0
+Yellow1 <= Yellow1~0.DB_MAX_OUTPUT_PORT_TYPE
+Red1 <= Red1~0.DB_MAX_OUTPUT_PORT_TYPE
+Green2 <= Green2~0.DB_MAX_OUTPUT_PORT_TYPE
+Yellow2 <= Yellow2~0.DB_MAX_OUTPUT_PORT_TYPE
+Red2 <= Red2~0.DB_MAX_OUTPUT_PORT_TYPE
+Test <= Divisor:inst12.8seconds
+
+
+|SemaforoInteligente|74173:inst35
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|DECFarolSecondary:inst16
+Green2 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+MSBIN => inst8.IN0
+MSBIN => inst14.IN0
+MSBIN => Red2.DATAIN
+MSBIN => inst.IN0
+MSBIN => inst16.IN0
+MSBIN => inst13.IN0
+LSBIN => inst8.IN1
+LSBIN => inst18.IN1
+LSBIN => inst15.IN0
+LSBIN => inst16.IN1
+LSBIN => inst12.IN0
+Yellow2 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Red2 <= MSBIN.DB_MAX_OUTPUT_PORT_TYPE
+Green1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Yellow1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Red1 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateSecondary:inst9
+LSBOUT <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst17.ACLR
+CLRN => inst14.ACLR
+Clockin1sec => 74161:inst115.CLK
+Clockin1sec => 74161:inst114.CLK
+Secondaryin => inst18.IN1
+MSBOUT <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst115
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst115|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst114
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|MaquinadeStateSecondary:inst9|74161:inst114|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|Divisor:inst12
+1second <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+clock_32 => inst.CLK
+DBR25clock_out <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+8seconds <= 74161:inst113.QB
+2seconds <= 74161:inst114.QB
+4seconds <= 74161:inst116.QC
+clock_25 => ~NO_FANOUT~
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst113
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst113|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst112
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst112|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst114
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst114|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst116
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|Divisor:inst12|74161:inst116|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|DECFarol:inst10
+Start <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+LSBIN => inst8.IN0
+LSBIN => inst18.IN1
+LSBIN => inst15.IN0
+LSBIN => inst16.IN0
+MSBIN => inst8.IN1
+MSBIN => inst14.IN0
+MSBIN => inst.IN1
+MSBIN => inst16.IN1
+Main <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Second <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Night <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+2secout <= 2secin
+2secin => 2secout~0.IN1
+
+
+|SemaforoInteligente|Control:inst3
+QA <= QA~0.DB_MAX_OUTPUT_PORT_TYPE
+CLK1 => inst21.IN0
+CLK1 => 74173:inst37.CLK
+CLK1 => 74173:inst36.CLK
+PRNCLRNA => inst25.IN0
+PRNCLRNA => inst23.IN1
+PRNCLRNB => inst23.IN0
+PRNCLRNB => inst13.IN1
+PRNCLRNB => inst11.IN0
+Enable => inst9.IN1
+Enable => inst10.IN0
+Enable => inst13.IN0
+Enable => inst12.IN1
+CLK => inst17.IN1
+CLK => inst7.IN0
+QB <= QB~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|Control:inst3|74173:inst37
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|Control:inst3|74161:inst116
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|Control:inst3|74161:inst116|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|Control:inst3|74173:inst36
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|74173:inst33
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|DECFarolMain:inst15
+Green1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+MSBIN => inst8.IN0
+MSBIN => inst14.IN0
+MSBIN => Red1.DATAIN
+MSBIN => inst.IN0
+MSBIN => inst16.IN0
+MSBIN => inst13.IN0
+LSBIN => inst8.IN1
+LSBIN => inst18.IN1
+LSBIN => inst15.IN0
+LSBIN => inst16.IN1
+LSBIN => inst12.IN0
+Yellow1 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Red1 <= MSBIN.DB_MAX_OUTPUT_PORT_TYPE
+Green2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Yellow2 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Red2 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateMain:inst8
+LSBOUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst.ACLR
+CLRN => inst3.ACLR
+Clockin1sec => 74161:inst115.CLK
+Clockin1sec => 74161:inst114.CLK
+Mainin => inst1.IN1
+MSBOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst115
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst115|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst114
+clk => f74161:sub.clk
+ldn => f74161:sub.ldn
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => f74161:sub.d
+c => f74161:sub.c
+b => f74161:sub.b
+a => f74161:sub.a
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|SemaforoInteligente|MaquinadeStateMain:inst8|74161:inst114|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|74173:inst31
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|Start:inst7
+Green1 <= Startin.DB_MAX_OUTPUT_PORT_TYPE
+Startin => Green1.DATAIN
+Startin => Red2.DATAIN
+Red2 <= Startin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|74173:inst32
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|DECFarolNight:inst20
+Yellow2 <= Nightin.DB_MAX_OUTPUT_PORT_TYPE
+Nightin => Yellow2.DATAIN
+Nightin => Yellow1.DATAIN
+Yellow1 <= Nightin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforoInteligente|MaquinadeStateNight:inst19
+Nightout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Nightin => inst1.IN0
+ClockinNight => inst1.IN1
+
+
+|SemaforoInteligente|74173:inst36
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|SemaforoInteligente|74173:inst34
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+

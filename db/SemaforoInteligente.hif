@@ -1,0 +1,1745 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+2
+51
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+DECFarolMain
+# storage
+db|SemaforoInteligente.(2).cnf
+db|SemaforoInteligente.(2).cnf
+# case_insensitive
+# source_file
+DECFarolMain.bdf
+96d4792375548b5bab57eff1fb346f8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DECFarolMain:inst15
+}
+# macro_sequence
+
+# end
+# entity
+74173
+# storage
+db|SemaforoInteligente.(4).cnf
+db|SemaforoInteligente.(4).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74173.bdf
+719eb91e66fd89e21cf2cf9ff3f1d7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74173:inst35
+Control:inst3|74173:inst37
+Control:inst3|74173:inst36
+74173:inst33
+74173:inst31
+74173:inst32
+74173:inst36
+74173:inst34
+}
+# macro_sequence
+
+# end
+# entity
+74190
+# storage
+db|SemaforoInteligente.(7).cnf
+db|SemaforoInteligente.(7).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74190.bdf
+a0413bccd9ac2c3b15fd9f3bf36665e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+DECFarolSecondary
+# storage
+db|SemaforoInteligente.(8).cnf
+db|SemaforoInteligente.(8).cnf
+# case_insensitive
+# source_file
+DECFarolSecondary.bdf
+448f0fe76719f8d943b901bf34547bd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DECFarolSecondary:inst16
+}
+# macro_sequence
+
+# end
+# entity
+Start
+# storage
+db|SemaforoInteligente.(10).cnf
+db|SemaforoInteligente.(10).cnf
+# case_insensitive
+# source_file
+Start.bdf
+5f70f872599b1d64628aeb53ef9e29c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Start:inst7
+}
+# macro_sequence
+
+# end
+# entity
+DECFarolNight
+# storage
+db|SemaforoInteligente.(11).cnf
+db|SemaforoInteligente.(11).cnf
+# case_insensitive
+# source_file
+DECFarolNight.bdf
+a4ab5a8150ab213851627b7e237115
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DECFarolNight:inst20
+}
+# macro_sequence
+
+# end
+# entity
+MaquinadeStateNight
+# storage
+db|SemaforoInteligente.(12).cnf
+db|SemaforoInteligente.(12).cnf
+# case_insensitive
+# source_file
+MaquinadeStateNight.bdf
+fc6fa0cbfb50598f5d2d3de94e199363
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MaquinadeStateNight:inst19
+}
+# macro_sequence
+
+# end
+# entity
+MaquinadeState
+# storage
+db|SemaforoInteligente.(13).cnf
+db|SemaforoInteligente.(13).cnf
+# case_insensitive
+# source_file
+MaquinadeState.bdf
+65831365c66ad5b0f4292468f1e5e27d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(14).cnf
+db|SemaforoInteligente.(14).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|SemaforoInteligente.(15).cnf
+db|SemaforoInteligente.(15).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MaquinadeStateSecondary:inst9|74161:inst115|f74161:sub
+MaquinadeStateSecondary:inst9|74161:inst114|f74161:sub
+Divisor:inst12|74161:inst113|f74161:sub
+Divisor:inst12|74161:inst112|f74161:sub
+Divisor:inst12|74161:inst114|f74161:sub
+Divisor:inst12|74161:inst116|f74161:sub
+Control:inst3|74161:inst116|f74161:sub
+MaquinadeStateMain:inst8|74161:inst115|f74161:sub
+MaquinadeStateMain:inst8|74161:inst114|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(16).cnf
+db|SemaforoInteligente.(16).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(17).cnf
+db|SemaforoInteligente.(17).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QC
+-1
+3
+QB
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(18).cnf
+db|SemaforoInteligente.(18).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QC
+-1
+3
+QA
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(19).cnf
+db|SemaforoInteligente.(19).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+Divisor:inst12|74161:inst113
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(20).cnf
+db|SemaforoInteligente.(20).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(21).cnf
+db|SemaforoInteligente.(21).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(22).cnf
+db|SemaforoInteligente.(22).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QC
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(23).cnf
+db|SemaforoInteligente.(23).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QC
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(24).cnf
+db|SemaforoInteligente.(24).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+Divisor:inst12|74161:inst114
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(25).cnf
+db|SemaforoInteligente.(25).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QC
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+Divisor:inst12|74161:inst116
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(26).cnf
+db|SemaforoInteligente.(26).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(27).cnf
+db|SemaforoInteligente.(27).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QD
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(28).cnf
+db|SemaforoInteligente.(28).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QD
+-1
+3
+QC
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(29).cnf
+db|SemaforoInteligente.(29).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(30).cnf
+db|SemaforoInteligente.(30).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(31).cnf
+db|SemaforoInteligente.(31).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QB
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(32).cnf
+db|SemaforoInteligente.(32).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+Divisor:inst12|74161:inst112
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(33).cnf
+db|SemaforoInteligente.(33).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QC
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(34).cnf
+db|SemaforoInteligente.(34).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(35).cnf
+db|SemaforoInteligente.(35).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QD
+-1
+3
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+Control
+# storage
+db|SemaforoInteligente.(1).cnf
+db|SemaforoInteligente.(1).cnf
+# case_insensitive
+# source_file
+Control.bdf
+258f788cd9f482421d756c3e88d7d383
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Control:inst3
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(36).cnf
+db|SemaforoInteligente.(36).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QC
+-1
+3
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+Control:inst3|74161:inst116
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(37).cnf
+db|SemaforoInteligente.(37).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QC
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+D
+-1
+1
+C
+-1
+1
+B
+-1
+1
+A
+-1
+1
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+MaquinadeStateSecondary:inst9|74161:inst114
+MaquinadeStateMain:inst8|74161:inst114
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(38).cnf
+db|SemaforoInteligente.(38).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+QA
+-1
+3
+LDN
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+D
+-1
+1
+C
+-1
+1
+B
+-1
+1
+A
+-1
+1
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|SemaforoInteligente.(39).cnf
+db|SemaforoInteligente.(39).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+LDN
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+D
+-1
+1
+C
+-1
+1
+B
+-1
+1
+A
+-1
+1
+}
+# include_file {
+..|..|..|..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+MaquinadeStateSecondary:inst9|74161:inst115
+MaquinadeStateMain:inst8|74161:inst115
+}
+# macro_sequence
+
+# end
+# entity
+Divisor
+# storage
+db|SemaforoInteligente.(6).cnf
+db|SemaforoInteligente.(6).cnf
+# case_insensitive
+# source_file
+Divisor.bdf
+43feb8b6f5fcb26147d5814b94c4564
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Divisor:inst12
+}
+# macro_sequence
+
+# end
+# entity
+MaquinadeStateMain
+# storage
+db|SemaforoInteligente.(9).cnf
+db|SemaforoInteligente.(9).cnf
+# case_insensitive
+# source_file
+MaquinadeStateMain.bdf
+44502eb2f25590aba8ec438f23cead52
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MaquinadeStateMain:inst8
+}
+# macro_sequence
+
+# end
+# entity
+MaquinadeStateSecondary
+# storage
+db|SemaforoInteligente.(3).cnf
+db|SemaforoInteligente.(3).cnf
+# case_insensitive
+# source_file
+MaquinadeStateSecondary.bdf
+a2df392aafe63e63aec28a8553de3d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MaquinadeStateSecondary:inst9
+}
+# macro_sequence
+
+# end
+# entity
+SemaforoInteligente
+# storage
+db|SemaforoInteligente.(0).cnf
+db|SemaforoInteligente.(0).cnf
+# case_insensitive
+# source_file
+SemaforoInteligente.bdf
+7522206bc17b13dc99d5379480b217a8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+DECFarol
+# storage
+db|SemaforoInteligente.(5).cnf
+db|SemaforoInteligente.(5).cnf
+# case_insensitive
+# source_file
+DECFarol.bdf
+a3eab768b578e4857fc726132d2699d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DECFarol:inst10
+}
+# macro_sequence
+
+# end
+# complete
+

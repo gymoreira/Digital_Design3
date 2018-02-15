@@ -1,0 +1,396 @@
+Simulator report for SemaforoInteligente
+Wed Dec 13 21:24:33 2017
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 142 nodes    ;
+; Simulation Coverage         ;       4.32 % ;
+; Total Number of Transitions ; 213          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; ACEX1K       ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       4.32 % ;
+; Total nodes checked                                 ; 142          ;
+; Total output ports checked                          ; 139          ;
+; Total output ports with complete 1/0-value coverage ; 6            ;
+; Total output ports with no 1/0-value coverage       ; 94           ;
+; Total output ports with no 1-value coverage         ; 94           ;
+; Total output ports with no 0-value coverage         ; 133          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                              ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |SemaforoInteligente|clock_32             ; |SemaforoInteligente|clock_32             ; out              ;
+; |SemaforoInteligente|Divisor:inst4|inst28 ; |SemaforoInteligente|Divisor:inst4|inst28 ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst27 ; |SemaforoInteligente|Divisor:inst4|inst27 ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst26 ; |SemaforoInteligente|Divisor:inst4|inst26 ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst25 ; |SemaforoInteligente|Divisor:inst4|inst25 ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst   ; |SemaforoInteligente|Divisor:inst4|inst   ; regout           ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                     ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |SemaforoInteligente|Green1                                 ; |SemaforoInteligente|Green1                                 ; pin_out          ;
+; |SemaforoInteligente|Green1~0                               ; |SemaforoInteligente|Green1~0                               ; out0             ;
+; |SemaforoInteligente|0B                                     ; |SemaforoInteligente|0B                                     ; out              ;
+; |SemaforoInteligente|0A                                     ; |SemaforoInteligente|0A                                     ; out              ;
+; |SemaforoInteligente|Red1                                   ; |SemaforoInteligente|Red1                                   ; pin_out          ;
+; |SemaforoInteligente|Red1~0                                 ; |SemaforoInteligente|Red1~0                                 ; out0             ;
+; |SemaforoInteligente|Green2                                 ; |SemaforoInteligente|Green2                                 ; pin_out          ;
+; |SemaforoInteligente|Green2~0                               ; |SemaforoInteligente|Green2~0                               ; out0             ;
+; |SemaforoInteligente|Red2                                   ; |SemaforoInteligente|Red2                                   ; pin_out          ;
+; |SemaforoInteligente|Red2~0                                 ; |SemaforoInteligente|Red2~0                                 ; out0             ;
+; |SemaforoInteligente|74173:inst34|42                        ; |SemaforoInteligente|74173:inst34|42                        ; out              ;
+; |SemaforoInteligente|74173:inst34|9                         ; |SemaforoInteligente|74173:inst34|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst34|43                        ; |SemaforoInteligente|74173:inst34|43                        ; out              ;
+; |SemaforoInteligente|74173:inst34|8                         ; |SemaforoInteligente|74173:inst34|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst34|44                        ; |SemaforoInteligente|74173:inst34|44                        ; out              ;
+; |SemaforoInteligente|74173:inst36|42                        ; |SemaforoInteligente|74173:inst36|42                        ; out              ;
+; |SemaforoInteligente|74173:inst36|43                        ; |SemaforoInteligente|74173:inst36|43                        ; out              ;
+; |SemaforoInteligente|74173:inst36|8                         ; |SemaforoInteligente|74173:inst36|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst36|44                        ; |SemaforoInteligente|74173:inst36|44                        ; out              ;
+; |SemaforoInteligente|74173:inst36|7                         ; |SemaforoInteligente|74173:inst36|7                         ; regout           ;
+; |SemaforoInteligente|74173:inst31|42                        ; |SemaforoInteligente|74173:inst31|42                        ; out              ;
+; |SemaforoInteligente|74173:inst31|9                         ; |SemaforoInteligente|74173:inst31|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst31|43                        ; |SemaforoInteligente|74173:inst31|43                        ; out              ;
+; |SemaforoInteligente|74173:inst31|8                         ; |SemaforoInteligente|74173:inst31|8                         ; regout           ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst1        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst1        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst12       ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst12       ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst6        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst6        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst5        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst5        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst8        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst8        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3        ; regout           ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~0      ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~0      ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~1      ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~1      ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~2      ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~2      ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst7        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst7        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst11       ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst11       ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst15       ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst15       ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst8              ; |SemaforoInteligente|DECFarolMain:inst15|inst8              ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst18             ; |SemaforoInteligente|DECFarolMain:inst15|inst18             ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst               ; |SemaforoInteligente|DECFarolMain:inst15|inst               ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst16             ; |SemaforoInteligente|DECFarolMain:inst15|inst16             ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst17             ; |SemaforoInteligente|DECFarolMain:inst15|inst17             ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst12             ; |SemaforoInteligente|DECFarolMain:inst15|inst12             ; out0             ;
+; |SemaforoInteligente|74173:inst33|42                        ; |SemaforoInteligente|74173:inst33|42                        ; out              ;
+; |SemaforoInteligente|74173:inst33|43                        ; |SemaforoInteligente|74173:inst33|43                        ; out              ;
+; |SemaforoInteligente|74173:inst33|8                         ; |SemaforoInteligente|74173:inst33|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst33|44                        ; |SemaforoInteligente|74173:inst33|44                        ; out              ;
+; |SemaforoInteligente|74173:inst33|7                         ; |SemaforoInteligente|74173:inst33|7                         ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst6                    ; |SemaforoInteligente|Divisor:inst4|inst6                    ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|inst4                    ; |SemaforoInteligente|Divisor:inst4|inst4                    ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|51           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|51           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|47           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|47           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|59           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|59           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|49           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|49           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|50           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|50           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|46           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|46           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|61           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|61           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|38           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|38           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|60           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|60           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|51           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|51           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|47           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|47           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|59           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|59           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|49           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|49           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|50           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|50           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|46           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|46           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|61           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|61           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|38           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|38           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|60           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|60           ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst8                   ; |SemaforoInteligente|DECFarol:inst3|inst8                   ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst18                  ; |SemaforoInteligente|DECFarol:inst3|inst18                  ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst                    ; |SemaforoInteligente|DECFarol:inst3|inst                    ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst16                  ; |SemaforoInteligente|DECFarol:inst3|inst16                  ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst1   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst1   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst4   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst4   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst6   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst6   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst5   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst5   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst8   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst8   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3   ; regout           ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~0 ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~0 ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~1 ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~1 ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~2 ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~2 ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst7   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst7   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst11  ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst11  ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst12  ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst12  ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst8         ; |SemaforoInteligente|DECFarolSecondary:inst16|inst8         ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst18        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst18        ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst          ; |SemaforoInteligente|DECFarolSecondary:inst16|inst          ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst16        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst16        ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst17        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst17        ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst12        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst12        ; out0             ;
+; |SemaforoInteligente|74173:inst35|42                        ; |SemaforoInteligente|74173:inst35|42                        ; out              ;
+; |SemaforoInteligente|74173:inst35|9                         ; |SemaforoInteligente|74173:inst35|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst35|43                        ; |SemaforoInteligente|74173:inst35|43                        ; out              ;
+; |SemaforoInteligente|74173:inst35|8                         ; |SemaforoInteligente|74173:inst35|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst35|44                        ; |SemaforoInteligente|74173:inst35|44                        ; out              ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                     ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |SemaforoInteligente|Green1                                 ; |SemaforoInteligente|Green1                                 ; pin_out          ;
+; |SemaforoInteligente|Green1~0                               ; |SemaforoInteligente|Green1~0                               ; out0             ;
+; |SemaforoInteligente|0B                                     ; |SemaforoInteligente|0B                                     ; out              ;
+; |SemaforoInteligente|0A                                     ; |SemaforoInteligente|0A                                     ; out              ;
+; |SemaforoInteligente|Yellow1                                ; |SemaforoInteligente|Yellow1                                ; pin_out          ;
+; |SemaforoInteligente|Yellow1~0                              ; |SemaforoInteligente|Yellow1~0                              ; out0             ;
+; |SemaforoInteligente|Red1                                   ; |SemaforoInteligente|Red1                                   ; pin_out          ;
+; |SemaforoInteligente|Red1~0                                 ; |SemaforoInteligente|Red1~0                                 ; out0             ;
+; |SemaforoInteligente|Green2                                 ; |SemaforoInteligente|Green2                                 ; pin_out          ;
+; |SemaforoInteligente|Green2~0                               ; |SemaforoInteligente|Green2~0                               ; out0             ;
+; |SemaforoInteligente|Yellow2                                ; |SemaforoInteligente|Yellow2                                ; pin_out          ;
+; |SemaforoInteligente|Yellow2~0                              ; |SemaforoInteligente|Yellow2~0                              ; out0             ;
+; |SemaforoInteligente|Red2                                   ; |SemaforoInteligente|Red2                                   ; pin_out          ;
+; |SemaforoInteligente|Red2~0                                 ; |SemaforoInteligente|Red2~0                                 ; out0             ;
+; |SemaforoInteligente|74173:inst34|42                        ; |SemaforoInteligente|74173:inst34|42                        ; out              ;
+; |SemaforoInteligente|74173:inst34|9                         ; |SemaforoInteligente|74173:inst34|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst34|43                        ; |SemaforoInteligente|74173:inst34|43                        ; out              ;
+; |SemaforoInteligente|74173:inst34|8                         ; |SemaforoInteligente|74173:inst34|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst34|44                        ; |SemaforoInteligente|74173:inst34|44                        ; out              ;
+; |SemaforoInteligente|74173:inst34|7                         ; |SemaforoInteligente|74173:inst34|7                         ; regout           ;
+; |SemaforoInteligente|74173:inst36|42                        ; |SemaforoInteligente|74173:inst36|42                        ; out              ;
+; |SemaforoInteligente|74173:inst36|9                         ; |SemaforoInteligente|74173:inst36|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst36|43                        ; |SemaforoInteligente|74173:inst36|43                        ; out              ;
+; |SemaforoInteligente|74173:inst36|8                         ; |SemaforoInteligente|74173:inst36|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst36|44                        ; |SemaforoInteligente|74173:inst36|44                        ; out              ;
+; |SemaforoInteligente|74173:inst36|7                         ; |SemaforoInteligente|74173:inst36|7                         ; regout           ;
+; |SemaforoInteligente|MaquinadeStateNight:inst19|inst1       ; |SemaforoInteligente|MaquinadeStateNight:inst19|inst1       ; out0             ;
+; |SemaforoInteligente|74173:inst32|42                        ; |SemaforoInteligente|74173:inst32|42                        ; out              ;
+; |SemaforoInteligente|74173:inst32|9                         ; |SemaforoInteligente|74173:inst32|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst32|43                        ; |SemaforoInteligente|74173:inst32|43                        ; out              ;
+; |SemaforoInteligente|74173:inst32|8                         ; |SemaforoInteligente|74173:inst32|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst31|42                        ; |SemaforoInteligente|74173:inst31|42                        ; out              ;
+; |SemaforoInteligente|74173:inst31|9                         ; |SemaforoInteligente|74173:inst31|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst31|43                        ; |SemaforoInteligente|74173:inst31|43                        ; out              ;
+; |SemaforoInteligente|74173:inst31|8                         ; |SemaforoInteligente|74173:inst31|8                         ; regout           ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst1        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst1        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst12       ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst12       ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst6        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst6        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst5        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst5        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst8        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst8        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3        ; regout           ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~0      ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~0      ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~1      ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~1      ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~2      ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst3~2      ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst7        ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst7        ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst11       ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst11       ; out0             ;
+; |SemaforoInteligente|MaquinadeStateMain:inst13|inst15       ; |SemaforoInteligente|MaquinadeStateMain:inst13|inst15       ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst8              ; |SemaforoInteligente|DECFarolMain:inst15|inst8              ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst18             ; |SemaforoInteligente|DECFarolMain:inst15|inst18             ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst               ; |SemaforoInteligente|DECFarolMain:inst15|inst               ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst16             ; |SemaforoInteligente|DECFarolMain:inst15|inst16             ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst17             ; |SemaforoInteligente|DECFarolMain:inst15|inst17             ; out0             ;
+; |SemaforoInteligente|DECFarolMain:inst15|inst12             ; |SemaforoInteligente|DECFarolMain:inst15|inst12             ; out0             ;
+; |SemaforoInteligente|74173:inst33|42                        ; |SemaforoInteligente|74173:inst33|42                        ; out              ;
+; |SemaforoInteligente|74173:inst33|9                         ; |SemaforoInteligente|74173:inst33|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst33|43                        ; |SemaforoInteligente|74173:inst33|43                        ; out              ;
+; |SemaforoInteligente|74173:inst33|8                         ; |SemaforoInteligente|74173:inst33|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst33|44                        ; |SemaforoInteligente|74173:inst33|44                        ; out              ;
+; |SemaforoInteligente|74173:inst33|7                         ; |SemaforoInteligente|74173:inst33|7                         ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst6                    ; |SemaforoInteligente|Divisor:inst4|inst6                    ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|inst44                   ; |SemaforoInteligente|Divisor:inst4|inst44                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst43                   ; |SemaforoInteligente|Divisor:inst4|inst43                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst42                   ; |SemaforoInteligente|Divisor:inst4|inst42                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst41                   ; |SemaforoInteligente|Divisor:inst4|inst41                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst78                   ; |SemaforoInteligente|Divisor:inst4|inst78                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst40                   ; |SemaforoInteligente|Divisor:inst4|inst40                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst39                   ; |SemaforoInteligente|Divisor:inst4|inst39                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst38                   ; |SemaforoInteligente|Divisor:inst4|inst38                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst37                   ; |SemaforoInteligente|Divisor:inst4|inst37                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst72                   ; |SemaforoInteligente|Divisor:inst4|inst72                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst36                   ; |SemaforoInteligente|Divisor:inst4|inst36                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst35                   ; |SemaforoInteligente|Divisor:inst4|inst35                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst34                   ; |SemaforoInteligente|Divisor:inst4|inst34                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst33                   ; |SemaforoInteligente|Divisor:inst4|inst33                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst66                   ; |SemaforoInteligente|Divisor:inst4|inst66                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst32                   ; |SemaforoInteligente|Divisor:inst4|inst32                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst31                   ; |SemaforoInteligente|Divisor:inst4|inst31                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst30                   ; |SemaforoInteligente|Divisor:inst4|inst30                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst29                   ; |SemaforoInteligente|Divisor:inst4|inst29                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst60                   ; |SemaforoInteligente|Divisor:inst4|inst60                   ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|inst4                    ; |SemaforoInteligente|Divisor:inst4|inst4                    ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|51           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|51           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|47           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|47           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|59           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|59           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|48           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|48           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|49           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|49           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|45           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|45           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|50           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|50           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|46           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|46           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|61           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|61           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|62           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|62           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|38           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|38           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst1|60           ; |SemaforoInteligente|Divisor:inst4|74190:inst1|60           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|51           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|51           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|47           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|47           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|59           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|59           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|48           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|48           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|49           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|49           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|45           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|45           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|50           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|50           ; regout           ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|46           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|46           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|61           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|61           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|62           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|62           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|38           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|38           ; out0             ;
+; |SemaforoInteligente|Divisor:inst4|74190:inst2|60           ; |SemaforoInteligente|Divisor:inst4|74190:inst2|60           ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst8                   ; |SemaforoInteligente|DECFarol:inst3|inst8                   ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst18                  ; |SemaforoInteligente|DECFarol:inst3|inst18                  ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst                    ; |SemaforoInteligente|DECFarol:inst3|inst                    ; out0             ;
+; |SemaforoInteligente|DECFarol:inst3|inst16                  ; |SemaforoInteligente|DECFarol:inst3|inst16                  ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst1   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst1   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst4   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst4   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst6   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst6   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst5   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst5   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst8   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst8   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3   ; regout           ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~0 ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~0 ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~1 ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~1 ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~2 ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst3~2 ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst7   ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst7   ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst11  ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst11  ; out0             ;
+; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst12  ; |SemaforoInteligente|MaquinadeStateSecondary:inst18|inst12  ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst8         ; |SemaforoInteligente|DECFarolSecondary:inst16|inst8         ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst18        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst18        ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst          ; |SemaforoInteligente|DECFarolSecondary:inst16|inst          ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst16        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst16        ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst17        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst17        ; out0             ;
+; |SemaforoInteligente|DECFarolSecondary:inst16|inst12        ; |SemaforoInteligente|DECFarolSecondary:inst16|inst12        ; out0             ;
+; |SemaforoInteligente|74173:inst35|42                        ; |SemaforoInteligente|74173:inst35|42                        ; out              ;
+; |SemaforoInteligente|74173:inst35|9                         ; |SemaforoInteligente|74173:inst35|9                         ; regout           ;
+; |SemaforoInteligente|74173:inst35|43                        ; |SemaforoInteligente|74173:inst35|43                        ; out              ;
+; |SemaforoInteligente|74173:inst35|8                         ; |SemaforoInteligente|74173:inst35|8                         ; regout           ;
+; |SemaforoInteligente|74173:inst35|44                        ; |SemaforoInteligente|74173:inst35|44                        ; out              ;
+; |SemaforoInteligente|74173:inst35|7                         ; |SemaforoInteligente|74173:inst35|7                         ; regout           ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Dec 13 21:24:33 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off SemaforoInteligente -c SemaforoInteligente
+Info: Using vector source file "C:/Users/Gabriel Yago M/Desktop/2017.2/CD_2017.2/PBLs/3/PBL3/Waveform1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 15.63 ns on register "|SemaforoInteligente|74173:inst32|9"
+Warning: Found clock-sensitive change during active clock edge at time 15.63 ns on register "|SemaforoInteligente|74173:inst32|8"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       4.32 %
+Info: Number of transitions in simulation is 213
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 182 megabytes
+    Info: Processing ended: Wed Dec 13 21:24:34 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
